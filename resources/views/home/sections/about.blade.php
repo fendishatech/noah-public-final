@@ -21,34 +21,25 @@
                 </svg>
             </div>
             <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">ራዕይ</h2>
-                <p class="leading-relaxed text-base mt-6">ኖህ አነስተኛ የፋይናስ ተቋምበሥራ ክልሉ የኀብረት ሥራ እንቅስቃሴበሰለጠነ የሰው ሀይል እና
+                <h2 class="text-green-600 text-4xl title-font font-medium mb-2 hiwua">ራዕይ</h2>
+                <p class="text-darkGrayishBlue leading-relaxed text-base mt-6">ኖህ አነስተኛ የፋይናስ ተቋምበሥራ ክልሉ የኀብረት ሥራ
+                    እንቅስቃሴበሰለጠነ የሰው ሀይል እና
                     በዘመናዊ ቴክኖሎጂ በጎልብቶ ዘላቂና ጠንካራ የኢኮኖሚ መሰረት ያለዉ ፣ በራሱ የሚተማመን ፣
                     የቁጠባና ብድር ባህሉ የዳበረና ዘመናዊ የፋይናንስ አገልግሎቶችን የሚጠቀም ህ/ሰብ ተፈጥሮ ማየት</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+
             </div>
         </div>
         {{-- Mission --}}
         <div class="flex items-center  mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
             <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">ተልዕኮ</h2>
-                <p class="leading-relaxed text-base mt-6">የአካባቢዉን ህብረተሰብየቁጠባና ብድር ባህል በማዳበር የጥሬ ገነ ንዘብ እጥረትና ክምችት ችግሮች
+                <h2 class="text-green-600 text-4xl title-font font-medium mb-2 hiwua">ተልዕኮ</h2>
+                <p class="text-darkGrayishBlue leading-relaxed text-base mt-6">የአካባቢዉን ህብረተሰብየቁጠባና ብድር ባህል በማዳበር የጥሬ ገነ
+                    ንዘብ እጥረትና ክምችት ችግሮች
                     በመፍታት፣ ለአባላት ተስማሚ የፋይናንስ አገልግሎቶችን በማቅረብ፣የህ/ስ/ማኀበራት ራስ ገዝና ራስ
                     አገዝ ባህሪ እንዲላበሱ በማድረግና በየደረጃዉ መዋቅራዊና ኢኮኖሚያዊ ቅንጅት በመፍጠር የአባላትን
                     ተጠቃሚነት ማረጋገጥ፡፡ እንዲሁም የአባላትን ቁጥር በከፍተኛ ደረጃ በማሳደግና የቁጠባና የስራ
                     ባሕልን በማዳበር አስተማማኝ የሆነ የቁጠባና ብድር አገልግሎት በመስጠት የአባላትን ኢኮኖሚያዊና
                     ማኅበራዊ አቅም በማሻሻል በመስኩ ሁለንተናዊ ተመራጭነትን ማግኘት</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
             </div>
             <div
                 class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
@@ -69,23 +60,26 @@
         {{-- Goal --}}
         <div class="flex items-center  mx-auto sm:flex-row flex-col">
             <div
-                class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                    stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
+                class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                <svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.24 1l.59.24 2.11 4.93-.23.59-3.29 1.41-.59-.24-.17-.41L6.1 9l-.58-.19-.16-.38L2.8 9.49l-.58-.24-.72-1.67.28-.59 2.5-1.06-.18-.41.24-.58L7.9 3.41 7.72 3 8 2.42 11.24 1zM2.5 7.64l.35.85 2.22-.91-.37-.85-2.2.91zm2.74-2.12l1.11 2.45 3-1.28-1.11-2.44-3 1.27zM8.79 3l1.86 4.11 2.29-1.01L11.18 2 8.72 3h.07zM8.5 9.1l3.02 4.9h-1.17l-1.88-3.03v4h-1V9.82L5.58 14h-1.1l1.7-3.9 2.32-1z" />
                 </svg>
             </div>
             <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
-                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                    taxidermy. Gastropub indxgo juice poutine.</p>
-                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
+                <h2 class="text-green-600 text-4xl title-font font-medium mb-2 hiwua">አላማ</h2>
+                <p class="text-darkGrayishBlue leading-relaxed text-base mt-6">
+                    ከአባሉ ቁጠባን በማሰባስብ ፣ ለአባልና ለህብረት ስራ ማህበራት ብድር በመስጠት ማህበሩ ጠንካራ የፋይናንስ አቋም እንዲኖረው በማስቻል የኢንቨስትመንት አቅምን
+                    መፍጥር
+                </p>
+                <p class="text-darkGrayishBlue leading-relaxed text-base mt-6">
+                    የቁጠባ ባህልን በማሰደግ አባላት በጋራ እና በተናጥል የራስንና የሀገር ኢኮኖሚ በሚጠቅም በተለያዩ የኢንቨስትመንት ዘርፍ እና አገልግሎት ዘርፍ እንዲሰማሩ
+                    ማስቻል
+                </p>
+                <p class="text-darkGrayishBlue leading-relaxed text-base mt-6">
+                    የቁጠባ ባህልን በማሳደግ የአባላትን በራስ የመተማመን አቅም ማጎልበት
+                </p>
             </div>
         </div>
 
