@@ -1,13 +1,14 @@
 <header class="">
     <!-- Navbar -->
     <nav class="container mx-auto p-6 relative">
-        <div class="flex items-center justify-between bg-blue-100">
+        <div class="flex items-center justify-between">
             <!-- logo -->
             <div class="pt-2">
-                <a href="/"><img class="-mt-6 w-64 h-16" src="/images/logo/noah-logo.png" alt="Logo" /></a>
+                <a href="/"><img class="-mt-6 w-36 sm:w-48 h-16" src="/images/logo/noah-logo.png"
+                        alt="Logo" /></a>
             </div>
             <!-- links -->
-            <div class="hidden md:flex space-x-6 text-3xl text-yellow-700 zelan">
+            <div class="hidden sm:text-sm md:text-xl md:flex space-x-6  text-yellow-700 zelan">
                 <a href="/" class="hover:text-yellow-600">ዋና ግጽ</a>
                 <a href="/about" class="hover:text-yellow-600">ስለ ኖህ</a>
                 <a href="/services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
