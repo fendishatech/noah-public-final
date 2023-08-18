@@ -10,7 +10,7 @@
             <!-- links -->
             <div class="hidden sm:text-sm md:text-xl md:flex space-x-6  text-yellow-700 zelan">
                 <a href="/" class="hover:text-yellow-600">ዋና ግጽ</a>
-                <a href="/about" class="hover:text-yellow-600">ስለ ኖህ</a>
+                <a href="{{ route('home') }}#about" class="hover:text-yellow-600">ስለ ኖህ</a>
                 <a href="/services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
                 <a href="/contact" class="hover:text-yellow-600">ያግኙን</a>
             </div>
