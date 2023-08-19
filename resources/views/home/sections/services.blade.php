@@ -25,7 +25,7 @@ $services = [
                 ኖህ የሚሰጣቸው የተለያዩ አገልግሎቶች
             </h2>
             <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-                ኖህ የቁጠባና የብድር ተቋም ፤ ይተለያዩ የቁጠባ እና የብድር ፣
+
             </p>
         </div>
         <!-- Numbered List -->

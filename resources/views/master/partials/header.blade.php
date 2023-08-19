@@ -12,12 +12,12 @@
                 <a href="/" class="hover:text-yellow-600">ዋና ግጽ</a>
                 <a href="{{ route('home') }}#about" class="hover:text-yellow-600">ስለ ኖህ</a>
                 <a href="/services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
-                <a href="/contact" class="hover:text-yellow-600">ያግኙን</a>
+                <a href="{{ route('home') }}#contact" class="hover:text-yellow-600">ያግኙን</a>
             </div>
             <!-- cta -->
             <div class="flex space-x-2 text-2xl zelan">
                 <a href="/register"
-                    class="hidden md:block p-3 px-6 text-white bg-red-800 rounded-full baseline hover:bg-red-800 zelan items-center">አሁኑኑ
+                    class="hidden md:block p-3 px-6 text-white bg-red-600 rounded-full baseline hover:bg-red-800 zelan items-center">አሁኑኑ
                     ይመዝገቡ</a>
                 <a href="#"
                     class="hidden md:block p-3 px-6  text-white bg-green-600 rounded-full baseline hover:bg-green-800">ግባ</a>
@@ -35,11 +35,11 @@
         <!-- Mobile Menu -->
         <div class="md:hidden">
             <div id="menu"
-                class="hidden absolute flex-col items-center self-end py-8 mt-10 space-y-6  bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-xl text-2xl text-yellow-800 zelan">
+                class="hidden z-50 absolute flex-col items-center self-end py-8 mt-10 space-y-6  bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-xl text-2xl text-yellow-800 zelan">
                 <a href="/" class="hover:text-yellow-600">ዋና ግጽ</a>
-                <a href="/about" class="hover:text-yellow-600">ስለ ኖህ</a>
+                <a href="{{ route('home') }}#about" class="hover:text-yellow-600">ስለ ኖህ</a>
                 <a href="/services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
-                <a href="/contact" class="hover:text-yellow-600">ያግኙን</a>
+                <a href="{{ route('home') }}#contact" class="hover:text-yellow-600">ያግኙን</a>
 
                 <!-- cta -->
                 <x-cta-button text="አሁኑኑ ይመዝገቡ"></x-cta-button>

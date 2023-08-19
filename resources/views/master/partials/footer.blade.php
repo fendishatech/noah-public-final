@@ -4,7 +4,7 @@
         <!-- Logo and social -->
         <div
             class="flex flex-col-reverse md:flex-col items-center md:items-start justify-center space-y-12 md:space-y-4">
-            <div class="mx-auto my-6 text-center text-white md:hidden">
+            <div class="mx-auto my-6 text-center text-green-600 md:hidden">
                 Copyright &copy; 2023, All rights reserved.
             </div>
             <!-- Logo -->
@@ -12,19 +12,19 @@
             <!-- Social -->
             <div class="flex justify-center space-x-4">
                 <!-- Link 1 -->
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100090650977088">
                     <img src="/images/social/facebook.svg" alt="" class="h-8 hover:text-brightRed" />
                 </a>
                 <!-- Link 2 -->
-                <a href="#">
+                <a href="https://www.youtube.com/@NoahSCOOP">
                     <img src="/images/social/youtube.svg" alt="" class="h-8" />
                 </a>
                 <!-- Link 3 -->
-                <a href="#">
+                <a href="https://t.me/noahsacoop">
                     <img src="/images/social/telegram.svg" alt="" class="h-8" />
                 </a>
                 <!-- Link 4 -->
-                <a href="#">
+                <a href="https://www.linkedin.com/in/noah-sac-coop">
                     <img src="/images/social/linkedin.svg" alt="" class="h-8" />
                 </a>
                 <!-- Link 5 -->
@@ -37,11 +37,11 @@
 
         <!-- Links -->
         <div class="flex justify-around space-x-32 ">
-            <div class="flex flex-col space-y-3 text-white text-xl zelan">
-                <a href="#" class="hover:text-brightRed">ዋና ገጽ</a>
-                <a href="#" class="hover:text-brightRed">ስለ ኖህ</a>
+            <div class="flex flex-col space-y-3 text-green-600 text-xl zelan">
+                <a href="/" class="hover:text-brightRed">ዋና ገጽ</a>
+                <a href="{{ route('home') }}#about" class="hover:text-brightRed">ስለ ኖህ</a>
                 <a href="/services" class="hover:text-brightRed">አገልግሎቶቻችን</a>
-                <a href="/contact" class="hover:text-brightRed">ያግኙን</a>
+                <a href="{{ route('home') }}#contact" class="hover:text-brightRed">ያግኙን</a>
             </div>
         </div>
         <!-- Links -->
@@ -49,7 +49,7 @@
         <!-- Input Container -->
         <div class="flex flex-col justify-between">
 
-            <div class="hidden md:block text-white">
+            <div class="hidden md:block text-green-600">
                 Copyright &copy; 2023, All rights reserved.
             </div>
         </div>

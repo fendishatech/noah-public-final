@@ -3,7 +3,7 @@
     <div
         class="container mx-auto px-6 py-4 md:py-12 flex md:flex-row flex-col justify-between items-center space-y-12 md:space-y-0">
         <h2 class="md:max-w-xl text-5xl md:text-4xl font-bold leading-tight text-center text-white md:text-left">
-            ይሄን የኢኮኖሚ ቤተሰብ ይቀላቀሉ !
+            የአክሲዎን ሽያጭ አለን ፣ እንዳያምልጦ!
         </h2>
 
         <a href="/register"
