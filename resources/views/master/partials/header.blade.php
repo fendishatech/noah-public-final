@@ -15,13 +15,22 @@
                 <a href="{{ route('home') }}#contact" class="hover:text-yellow-600">ያግኙን</a>
             </div>
             <!-- cta -->
-            <div class="flex space-x-2 text-2xl zelan">
-                <a href="/register"
-                    class="hidden md:block p-3 px-6 text-white bg-red-600 rounded-full baseline hover:bg-red-800 zelan items-center">አሁኑኑ
-                    ይመዝገቡ</a>
-                <a href="#"
-                    class="hidden md:block p-3 px-6  text-white bg-green-600 rounded-full baseline hover:bg-green-800">ግባ</a>
-            </div>
+            @if (Session::has('member'))
+                <div class="flex space-x-2 text-2xl zelan">
+                    <a href="/dashboard"
+                        class="hidden md:block p-3 px-6  text-white bg-green-600 rounded-full baseline hover:bg-green-800">ዳሽቦርድ</a>
+                    <a href="/logout"
+                        class="hidden md:block p-3 px-6  text-white bg-green-600 rounded-full baseline hover:bg-green-800">ውጣ</a>
+                </div>
+            @else
+                <div class="flex space-x-2 text-2xl zelan">
+                    <a href="/register"
+                        class="hidden md:block p-3 px-6 text-white bg-red-600 rounded-full baseline hover:bg-red-800 zelan items-center">አሁኑኑ
+                        ይመዝገቡ</a>
+                    <a href="/login"
+                        class="hidden md:block p-3 px-6  text-white bg-green-600 rounded-full baseline hover:bg-green-800">ግባ</a>
+                </div>
+            @endif
 
             <!-- Hamburger Icon -->
             <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
