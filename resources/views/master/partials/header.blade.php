@@ -11,7 +11,7 @@
             <div class="hidden sm:text-sm md:text-xl md:flex space-x-6  text-yellow-700 zelan">
                 <a href="/" class="hover:text-yellow-600">ዋና ግጽ</a>
                 <a href="{{ route('home') }}#about" class="hover:text-yellow-600">ስለ ኖህ</a>
-                <a href="/services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
+                <a href="{{ route('home') }}#services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
                 <a href="{{ route('home') }}#contact" class="hover:text-yellow-600">ያግኙን</a>
             </div>
             <!-- cta -->
@@ -47,7 +47,7 @@
                 class="hidden z-50 absolute flex-col items-center self-end py-8 mt-10 space-y-6  bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-xl text-2xl text-yellow-800 zelan">
                 <a href="/" class="hover:text-yellow-600">ዋና ግጽ</a>
                 <a href="{{ route('home') }}#about" class="hover:text-yellow-600">ስለ ኖህ</a>
-                <a href="/services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
+                <a href="{{ route('home') }}#services" class="hover:text-yellow-600">አገልግሎቶቻችን</a>
                 <a href="{{ route('home') }}#contact" class="hover:text-yellow-600">ያግኙን</a>
 
                 <!-- cta -->

@@ -40,7 +40,7 @@
             <div class="flex flex-col space-y-3 text-green-600 text-xl zelan">
                 <a href="/" class="hover:text-brightRed">ዋና ገጽ</a>
                 <a href="{{ route('home') }}#about" class="hover:text-brightRed">ስለ ኖህ</a>
-                <a href="/services" class="hover:text-brightRed">አገልግሎቶቻችን</a>
+                <a href="{{ route('home') }}#services" class="hover:text-brightRed">አገልግሎቶቻችን</a>
                 <a href="{{ route('home') }}#contact" class="hover:text-brightRed">ያግኙን</a>
             </div>
         </div>
