@@ -10,6 +10,14 @@ use Illuminate\Support\Facades\Session;
 class MemberController extends Controller
 {
     /**
+     * User Dashboard.
+     */
+    public function dashboard()
+    {
+        return view('members.dashboard');
+    }
+
+    /**
      * Login member.
      */
     public function login(Request $req)

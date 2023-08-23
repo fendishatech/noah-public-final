@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\ClientPayments;
 use Illuminate\Http\Request;
 
 class ClientController extends Controller
@@ -43,7 +44,7 @@ class ClientController extends Controller
 
             $client->save();
 
-            return redirect('/auth/confirmation')->with('success', 'User added successfully.');
+            return redirect('/confirm')->with('success', 'User added successfully.');
         } else {
             return redirect()->back()->withErrors($validatedData)->withInput();
         }
@@ -54,7 +55,8 @@ class ClientController extends Controller
      */
     public function confirmRegister()
     {
-        return view('auth.confirm_register');
+        $client_payments = ClientPayments::all()->first();
+        return view('auth.confirm_register')->with(['client_payments' => $client_payments]);
     }
 
     /**

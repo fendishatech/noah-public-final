@@ -121,13 +121,6 @@ $loanServices = [
                 @endforeach
             </ul>
         </div>
-        {{-- Know More --}}
-    </div>
-
-    <div class="container mx-auto">
-        <a href="/services"
-            class="p-3 px-6 w-[200px] flex justify-center rounded-full mx-auto mt-20 text-white bg-red-500 border-0 focus:outline-none hover:bg-red-600 text-lg hiwua">የበለጠ
-            ለማወቅ >>></a>
     </div>
 </section>
 <!-- Services -->
