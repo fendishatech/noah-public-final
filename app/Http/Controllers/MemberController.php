@@ -14,7 +14,8 @@ class MemberController extends Controller
      */
     public function dashboard()
     {
-        return view('members.dashboard');
+        $member = Member::get();
+        return view('members.dashboard', ['member' => $member]);
     }
 
     /**
@@ -44,6 +45,14 @@ class MemberController extends Controller
         } else {
             return redirect()->back()->withErrors("Wrong password or username!")->withInput();
         }
+    }
+
+    /**
+     * Loan Calculator
+     */
+    public function loanCalculator()
+    {
+        return view('members.loan-calculator');
     }
 
     /**

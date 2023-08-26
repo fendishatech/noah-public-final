@@ -32,4 +32,5 @@ Route::post('/register', [ClientController::class, 'register']);
 Route::post('/login', [MemberController::class, 'login']);
 
 // MEMBERS AREA ROUTES
-Route::get('dashboard', [MemberController::class, 'dashboard']);
+Route::get('dashboard', [MemberController::class, 'dashboard'])->name('dashboard');
+Route::get('loan_calculator', [MemberController::class, 'loanCalculator'])->name('loan_calculator');

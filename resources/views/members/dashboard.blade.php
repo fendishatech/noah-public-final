@@ -9,6 +9,7 @@
         {{-- Greeting & Loan Calculator --}}
         @include('members.partials.header')
         {{-- Remaining Balance --}}
+        @include('members.partials.remaining-balance')
         {{-- Lots --}}
         {{-- Loan Status --}}
         {{-- Upcoming Payments --}}

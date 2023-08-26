@@ -3,7 +3,7 @@
         <p class="text-2xl font-semi-bold text-green-600">ሰላም የደምበኛ ስም</p>
         <h1 class="text-2xl font-bold text-yellow-800">እንኳን በደህና መጡ</h1>
     </div>
-    <a href="/login"
-        class=" md:block p-3 px-8  text-white bg-green-600 rounded-full baseline hover:bg-green-800 text-xl hiwua">የብድር
+    <a href="{{ route('loan_calculator') }}"
+        class="md:block p-3 px-8  text-white bg-green-600 rounded-full baseline hover:bg-green-800 text-xl hiwua">የብድር
         ካልኩሌተር</a>
 </div>
