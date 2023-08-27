@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('loan_payments', function (Blueprint $table) {
             $table->id();
-            $table->foreign('loan_id')->references('id')->on('loans');
+            $table->unsignedBigInteger('loan_id');
+            $table->foreign('loan_id')->references('id')->on('loans')->onDelete('CASCADE');
             $table->date('payment_date');
             $table->decimal('amount', 10, 2);
             $table->timestamps();

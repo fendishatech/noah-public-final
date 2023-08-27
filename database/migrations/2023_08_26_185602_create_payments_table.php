@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('account_id');
             $table->foreign('account_id')
                 ->references('id')->on('savings')
-                ->onDelete('set null'); // Foreign key
+                ->onDelete('CASCADE'); // Foreign key
             $table->date('payment_date');
             $table->decimal('amount');
             $table->enum('payment_type', ['deposit', 'interest']);

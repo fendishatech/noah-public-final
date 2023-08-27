@@ -16,6 +16,7 @@ return new class extends Migration
             $table->id();
 
             // Member that took this loan
+            $table->unsignedBigInteger('member_id');
             $table->foreign('member_id')->references('id')->on('members');
 
             $table->decimal('amount', 10, 2);

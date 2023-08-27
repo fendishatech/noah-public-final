@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('loan_requests', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('member_id');
             $table->foreign('member_id')->references('id')->on('members');
             $table->enum('status', ['approved', 'declined', 'pending'])->default('pending');
+            $table->decimal('request_amount', 10, 2);
+            $table->integer('request_duration'); // in months
             $table->text('request_data');
             $table->timestamps();
         });

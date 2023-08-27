@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('savings', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('member_id');
             $table->foreign('member_id')
                 ->references('id')->on('members')
-                ->onDelete('set null'); // Foreign key
+                ->onDelete('CASCADE'); // Foreign key
 
             $table->string('account_number')->unique();
             $table->enum('account_type', ['regular', 'special']);
