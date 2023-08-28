@@ -14,6 +14,9 @@ export default {
                 veryLightGray: "hsl(0, 0%, 98%)",
             },
         },
+        fontFamily: {
+            Titillium: ["Titillium, sans-serif"],
+        },
         screens: {
             sm: "480px",
             md: "768px",

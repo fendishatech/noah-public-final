@@ -1,6 +1,7 @@
 <div class="my-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
     <div class="flex flex-col hiwua">
-        <p class="text-2xl font-semi-bold text-green-600">ሰላም የደምበኛ ስም</p>
+        <p class="text-2xl font-semi-bold text-green-600">ሰላም <span class="font-bold"> {{ $member->first_name }}
+                {{ $member->father_name }}</span></p>
         <h1 class="text-2xl font-bold text-yellow-800">እንኳን በደህና መጡ</h1>
     </div>
     <a href="{{ route('loan_calculator') }}"

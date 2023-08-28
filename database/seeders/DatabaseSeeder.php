@@ -8,6 +8,7 @@ use App\Models\Loan;
 use App\Models\LoanPayment;
 use App\Models\LoanRequest;
 use App\Models\Lot;
+use App\Models\Payment;
 use App\Models\Saving;
 use Database\Factories\LoanRequestFactory;
 use Database\Factories\LotFactory;
@@ -26,5 +27,6 @@ class DatabaseSeeder extends Seeder
         // LoanPayment::factory()->count(10)->create();
         // Lot::factory()->forMembers();
         // Saving::factory()->count(10)->create();
+        Payment::factory()->count(10)->create();
     }
 }

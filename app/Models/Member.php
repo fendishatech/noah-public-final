@@ -11,10 +11,10 @@ class Member extends Model
 
     public function savings()
     {
-        return $this->hasMany(SavingsAccount::class);
+        return $this->hasMany(Saving::class);
     }
 
-    public function lot()
+    public function lots()
     {
         return $this->hasOne(Lot::class);
     }

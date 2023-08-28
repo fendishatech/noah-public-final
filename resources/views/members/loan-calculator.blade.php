@@ -8,7 +8,8 @@
     <div class="container mx-auto my-12 px-6">
         <div class="my-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div class="flex flex-col hiwua">
-                <p class="text-2xl font-semi-bold text-green-600">ሰላም የደምበኛ ስም</p>
+                <p class="text-2xl font-semi-bold text-green-600">ሰላም <span class="font-bold"> {{ $member->first_name }}
+                        {{ $member->father_name }}</span></p>
                 <h1 class="text-2xl font-bold text-yellow-800">እንኳን በደህና መጡ</h1>
             </div>
             <a href="{{ route('dashboard') }}"
@@ -43,7 +44,7 @@
                 </form>
             </div>
             <div class="md:w-1/2 flex items-end md:px-8 justify-start">
-                <span class="text-7xl text-yellow-700" id="monthly-payment">0.00 ብር</span>
+                <span class="text-7xl text-yellow-700" id="monthly-payment">0.00 ብር / በወር</span>
             </div>
         </div>
     </div>
@@ -75,7 +76,7 @@
                     Math.pow(1 + monthlyInterestRate, numberOfPayments)) /
                 (Math.pow(1 + monthlyInterestRate, numberOfPayments) - 1);
 
-            document.getElementById("monthly-payment").innerHTML = `${monthlyPayment.toFixed(2)} ብር`;
+            document.getElementById("monthly-payment").innerHTML = `${monthlyPayment.toFixed(2)} ብር / በወር`;
         }
     </script>
 @endsection

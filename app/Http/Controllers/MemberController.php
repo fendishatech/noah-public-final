@@ -14,8 +14,29 @@ class MemberController extends Controller
      */
     public function dashboard()
     {
-        $member = Member::get();
-        return view('members.dashboard', ['member' => $member]);
+        $member = Session::get('member');
+
+        $savings = $member->savings;
+
+        $payments = $member->savingsPayments;
+
+        $loans = $member->loans;
+
+        $loanRequests = $member->loanRequests;
+
+        $loanPayments = $member->loanPayments;
+
+        $lot = $member->lots;
+
+        return view('members.dashboard', compact(
+            'member',
+            'savings',
+            'payments',
+            'loans',
+            'loanRequests',
+            'loanPayments',
+            'lot'
+        ));
     }
 
     /**
@@ -52,7 +73,8 @@ class MemberController extends Controller
      */
     public function loanCalculator()
     {
-        return view('members.loan-calculator');
+        $member = Session::get('member');
+        return view('members.loan-calculator', compact('member'));
     }
 
     /**
