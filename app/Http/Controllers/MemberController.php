@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Member;
+use App\Models\Payment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -18,7 +19,7 @@ class MemberController extends Controller
 
         $savings = $member->savings;
 
-        $payments = $member->savingsPayments;
+        $payments = Payment::find($member['id']);
 
         $loans = $member->loans;
 
